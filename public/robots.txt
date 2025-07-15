@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://federico-rizzo-portfolio.vercel.app/sitemap.xml 

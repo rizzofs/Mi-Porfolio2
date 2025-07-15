@@ -1,0 +1,15 @@
+{
+  "short_name": "Federico Rizzo",
+  "name": "Federico Rizzo - Desarrollador Full Stack",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3b82f6",
+  "background_color": "#ffffff"
+} 
