@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480" height="160" viewBox="0 0 480 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Líneas principales -->
+  <polyline points="60,120 120,60 200,100 280,40 360,80 420,30" stroke="#3b82f6" stroke-width="4" fill="none"/>
+  <polyline points="80,40 160,120 240,60 320,120 400,60" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+  <!-- Nodos -->
+  <circle cx="60" cy="120" r="10" fill="#3b82f6"/>
+  <circle cx="120" cy="60" r="12" fill="#8b5cf6"/>
+  <circle cx="200" cy="100" r="9" fill="#22d3ee"/>
+  <circle cx="280" cy="40" r="11" fill="#0ea5e9"/>
+  <circle cx="360" cy="80" r="10" fill="#a21caf"/>
+  <circle cx="420" cy="30" r="8" fill="#22d3ee"/>
+  <circle cx="80" cy="40" r="7" fill="#a5b4fc"/>
+  <circle cx="160" cy="120" r="8" fill="#38bdf8"/>
+  <circle cx="240" cy="60" r="7" fill="#f472b6"/>
+  <circle cx="320" cy="120" r="9" fill="#facc15"/>
+  <circle cx="400" cy="60" r="8" fill="#34d399"/>
+  <!-- Efecto de resplandor en el nodo central -->
+  <circle cx="280" cy="40" r="20" fill="#3b82f6" opacity="0.12"/>
+  <circle cx="280" cy="40" r="30" fill="#3b82f6" opacity="0.07"/>
+</svg> 

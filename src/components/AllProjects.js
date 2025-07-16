@@ -5,7 +5,7 @@ import Footer from './Footer';
 import pdvDashboard from '../assets/pdv-dashboard.png';
 import capturaCodes from '../assets/CapturaCodes.png';
 import capturaExpo from '../assets/CapturaExpo.png';
-import foto1 from '../assets/foto1.jpeg';
+import Foto3 from '../assets/Foto3.jpg';
 
 const AllProjects = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const AllProjects = () => {
     {
       id: 'pdv',
       title: 'PDV Local (En desarrollo)',
-      description: 'Sistema de punto de venta para comercios, con gestión de ventas, inventario y reportes. Interfaz moderna y adaptable.',
+      description: 'Sistema de punto de venta para comercios, con gestión de ventas, inventario y reportes. Dashboard con estadísticas en tiempo real: ventas, ingresos, productos más vendidos, stock bajo, acciones rápidas y últimas ventas. Interfaz moderna y adaptable.',
       image: pdvDashboard,
       technologies: [
         { name: 'Html', color: 'blue' },
@@ -77,11 +77,6 @@ const AllProjects = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Innovación y Tecnología en Acción</h1>
             <p className="text-lg mb-6 max-w-2xl">Explora una selección de proyectos desarrollados con tecnologías modernas, enfocados en resolver necesidades reales y aportar valor.</p>
             <a href="#contacto" className="inline-block bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition">Contáctame</a>
-          </div>
-          <div className="md:w-1/3 flex justify-center">
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl floating bg-white flex items-center justify-center">
-              <img src={foto1} alt="Federico Rizzo" className="object-cover w-full h-full" />
-            </div>
           </div>
         </div>
       </section>
@@ -163,7 +158,7 @@ const AllProjects = () => {
               </div>
             </div>
             <div className="md:w-1/3 flex justify-center">
-              <img src={foto1} alt="Federico Rizzo" className="w-40 h-40 rounded-full border-4 border-blue-600 shadow-lg object-cover" />
+              <img src={Foto3} alt="Federico Rizzo" className="w-40 h-40 rounded-full border-4 border-blue-600 shadow-lg object-cover" />
             </div>
           </div>
         </section>

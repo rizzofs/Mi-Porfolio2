@@ -46,10 +46,10 @@ const ProjectDetailPDV = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Descripción General</h2>
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl border border-blue-200 shadow-lg">
               <p className="text-lg text-gray-700 mb-4">
-                Sistema completo de punto de venta desarrollado para comercios locales, con gestión integral de ventas, inventario, compras y reportes detallados.
+                Sistema integral para la gestión comercial de pequeños y medianos negocios. Permite administrar ventas, productos, clientes, proveedores, compras, stock, medios de pago y reportes, con una interfaz moderna y responsiva.
               </p>
               <p className="text-lg text-gray-700">
-                La aplicación ofrece una interfaz moderna y adaptable que optimiza los procesos comerciales, facilitando la gestión diaria del negocio con herramientas intuitivas y eficientes.
+                Optimiza los procesos comerciales diarios con herramientas intuitivas y eficientes, facilitando la toma de decisiones y el control total del negocio.
               </p>
             </div>
           </div>
@@ -65,6 +65,7 @@ const ProjectDetailPDV = () => {
                   <span className="bg-yellow-100 text-yellow-800 text-sm px-4 py-2 rounded-full font-medium">JavaScript ES6+</span>
                   <span className="bg-rose-100 text-rose-800 text-sm px-4 py-2 rounded-full font-medium">Sass</span>
                   <span className="bg-green-100 text-green-800 text-sm px-4 py-2 rounded-full font-medium">Node.js</span>
+                  <span className="bg-purple-100 text-purple-800 text-sm px-4 py-2 rounded-full font-medium">Express.js</span>
                   <span className="bg-purple-100 text-purple-800 text-sm px-4 py-2 rounded-full font-medium">SQLite3</span>
                 </div>
               </div>
@@ -73,13 +74,15 @@ const ProjectDetailPDV = () => {
               <div className="mb-8">
                 <h3 className="font-bold text-blue-600 mb-4 text-lg">Características principales</h3>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 text-lg">
-                  <li>Gestión completa de ventas con múltiples métodos de pago</li>
-                  <li>Control de inventario en tiempo real</li>
-                  <li>Sistema de compras y proveedores</li>
-                  <li>Reportes detallados y estadísticas</li>
-                  <li>Interfaz responsive y adaptable</li>
-                  <li>Base de datos local con SQLite</li>
-                  <li>Backup automático de datos</li>
+                  <li>Gestión de ventas con cálculo automático de totales, descuentos e impuestos</li>
+                  <li>Administración de productos, stock, categorías y proveedores</li>
+                  <li>Módulo de clientes con historial de compras y estadísticas</li>
+                  <li>Registro y control de compras a proveedores</li>
+                  <li>Configuración de medios de pago y comisiones</li>
+                  <li>Dashboard con estadísticas en tiempo real</li>
+                  <li>Reportes y exportación de datos</li>
+                  <li>Interfaz moderna, responsiva y fácil de usar</li>
+                  <li>Atajos de teclado y modales para operaciones rápidas</li>
                 </ul>
               </div>
 
@@ -106,7 +109,7 @@ const ProjectDetailPDV = () => {
                   className="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() => openModal(pdvDashboard, "Dashboard Principal - Vista general del sistema")}
                 />
-                <p className="text-gray-700">Panel de control con métricas clave, ventas del día, productos más vendidos y alertas de inventario.</p>
+                <p className="text-gray-700">Panel de control con estadísticas en tiempo real: ventas, ingresos, productos más vendidos, stock bajo, acciones rápidas y últimas ventas.</p>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
@@ -117,7 +120,7 @@ const ProjectDetailPDV = () => {
                   className="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() => openModal(pdvVentas, "Módulo de Ventas - Gestión de transacciones")}
                 />
-                <p className="text-gray-700">Interfaz intuitiva para procesar ventas, múltiples métodos de pago y gestión de clientes.</p>
+                <p className="text-gray-700">Registro rápido de ventas, búsqueda de productos, selección de cliente y método de pago. Cálculo automático de totales, descuentos e impuestos.</p>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
@@ -128,7 +131,7 @@ const ProjectDetailPDV = () => {
                   className="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() => openModal(pdvCompras, "Gestión de Compras - Control de proveedores")}
                 />
-                <p className="text-gray-700">Sistema completo de compras con gestión de proveedores, órdenes y recepción de mercadería.</p>
+                <p className="text-gray-700">Registro de compras a proveedores, actualización automática de stock y costos. Selección de proveedor y productos comprados.</p>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
@@ -139,9 +142,22 @@ const ProjectDetailPDV = () => {
                   className="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() => openModal(pdvGestion, "Gestión de Productos - Control de inventario")}
                 />
-                <p className="text-gray-700">Administración completa del catálogo de productos, categorías, precios y stock.</p>
+                <p className="text-gray-700">Alta, baja y modificación de productos. Gestión de stock, categorías, historial de precios y alertas de stock bajo.</p>
               </div>
             </div>
+          </div>
+
+          {/* Implementaciones Futuras */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Implementaciones Futuras</h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2 text-lg">
+              <li>Implementar módulo de cuentas corrientes para clientes y proveedores</li>
+              <li>Agregar fecha de vencimiento y alertas para productos perecederos</li>
+              <li>Mejorar el módulo de reportes y gastos</li>
+              <li>Unificar estilos y experiencia de usuario en todos los módulos</li>
+              <li>Agregar autenticación y gestión de usuarios/roles</li>
+              <li>Integrar notificaciones y alertas en tiempo real</li>
+            </ul>
           </div>
 
           {/* Modal para imagen ampliada */}
