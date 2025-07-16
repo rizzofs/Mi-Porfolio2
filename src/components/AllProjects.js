@@ -76,7 +76,7 @@ const AllProjects = () => {
           <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Innovación y Tecnología en Acción</h1>
             <p className="text-lg mb-6 max-w-2xl">Explora una selección de proyectos desarrollados con tecnologías modernas, enfocados en resolver necesidades reales y aportar valor.</p>
-            <a href="#contacto" className="inline-block bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition">Contáctame</a>
+            <a href="#contacto-cta" className="inline-block bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition">Contáctame</a>
           </div>
         </div>
       </section>
@@ -113,7 +113,7 @@ const AllProjects = () => {
         </section>
 
         {/* Contacto CTA */}
-        <section className="py-16 bg-white mt-8 rounded-xl shadow-md max-w-6xl mx-auto px-4">
+        <section id="contacto-cta" className="py-16 bg-white mt-8 rounded-xl shadow-md max-w-6xl mx-auto px-4">
           <h2 className="section-title mb-8">¿Tienes un proyecto en mente?</h2>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
