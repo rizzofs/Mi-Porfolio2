@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mi-Porfolio2/static/css/main.9ea6bcf0.css",
-    "main.js": "/Mi-Porfolio2/static/js/main.a0f5c89b.js",
+    "main.js": "/Mi-Porfolio2/static/js/main.5f9f8362.js",
     "static/media/CapturaExpo.png": "/Mi-Porfolio2/static/media/CapturaExpo.fd3309b9ce90fa89bd1a.png",
     "static/media/CapturaCodes.png": "/Mi-Porfolio2/static/media/CapturaCodes.b8042ade371cca2e7114.png",
     "static/media/pdv-gestion-productos.png": "/Mi-Porfolio2/static/media/pdv-gestion-productos.e32d7aadaaa9cd9e2fce.png",
@@ -12,10 +12,10 @@
     "static/media/foto2.jpeg": "/Mi-Porfolio2/static/media/foto2.c9d8f9c54d8a1b75e3a5.jpeg",
     "index.html": "/Mi-Porfolio2/index.html",
     "main.9ea6bcf0.css.map": "/Mi-Porfolio2/static/css/main.9ea6bcf0.css.map",
-    "main.a0f5c89b.js.map": "/Mi-Porfolio2/static/js/main.a0f5c89b.js.map"
+    "main.5f9f8362.js.map": "/Mi-Porfolio2/static/js/main.5f9f8362.js.map"
   },
   "entrypoints": [
     "static/css/main.9ea6bcf0.css",
-    "static/js/main.a0f5c89b.js"
+    "static/js/main.5f9f8362.js"
   ]
 }
