@@ -97,7 +97,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="md:w-1/2">
-            <form onSubmit={handleSubmit} className="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <form
+              action="https://formspree.io/f/xyzpyoeg"
+              method="POST"
+              className="bg-gray-50 p-6 rounded-lg shadow-sm"
+            >
               <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 mb-2">
                   Nombre
@@ -106,8 +110,6 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
@@ -120,8 +122,6 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
@@ -134,8 +134,6 @@ const Contact = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
@@ -148,8 +146,6 @@ const Contact = () => {
                   id="message"
                   name="message"
                   rows="4"
-                  value={formData.message}
-                  onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 ></textarea>
