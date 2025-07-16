@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Mi-Porfolio2/static/css/main.9ea6bcf0.css",
+    "main.js": "/Mi-Porfolio2/static/js/main.a0f5c89b.js",
+    "static/media/CapturaExpo.png": "/Mi-Porfolio2/static/media/CapturaExpo.fd3309b9ce90fa89bd1a.png",
+    "static/media/CapturaCodes.png": "/Mi-Porfolio2/static/media/CapturaCodes.b8042ade371cca2e7114.png",
+    "static/media/pdv-gestion-productos.png": "/Mi-Porfolio2/static/media/pdv-gestion-productos.e32d7aadaaa9cd9e2fce.png",
+    "static/media/pdv-dashboard.png": "/Mi-Porfolio2/static/media/pdv-dashboard.22f1f4ad86d6f3b90185.png",
+    "static/media/pdv-compras.png": "/Mi-Porfolio2/static/media/pdv-compras.185ac32465186a3402d9.png",
+    "static/media/foto1.jpeg": "/Mi-Porfolio2/static/media/foto1.ece0a581c47c86a4167a.jpeg",
+    "static/media/pdv-ventas.png": "/Mi-Porfolio2/static/media/pdv-ventas.f30eb33ae2783ca99185.png",
+    "static/media/foto2.jpeg": "/Mi-Porfolio2/static/media/foto2.c9d8f9c54d8a1b75e3a5.jpeg",
+    "index.html": "/Mi-Porfolio2/index.html",
+    "main.9ea6bcf0.css.map": "/Mi-Porfolio2/static/css/main.9ea6bcf0.css.map",
+    "main.a0f5c89b.js.map": "/Mi-Porfolio2/static/js/main.a0f5c89b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ea6bcf0.css",
+    "static/js/main.a0f5c89b.js"
+  ]
+}
