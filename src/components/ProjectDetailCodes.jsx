@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import CapturaCodes from '../assets/CapturaCodes.png';
 
 const ProjectDetailCodes = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const ProjectDetailCodes = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Descripción General</h2>
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl border border-blue-200 shadow-lg">
+            <img src={CapturaCodes} alt="CODES++" className="rounded-xl shadow-lg mb-6 w-full" />
             <p className="text-lg text-gray-700 mb-4">
               Plataforma digital oficial del centro de estudiantes que representa a la comunidad estudiantil de la carrera de Sistemas de la Universidad Nacional de Luján (UNLu).
             </p>

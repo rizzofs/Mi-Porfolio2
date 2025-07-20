@@ -25,7 +25,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
-          <p>© 2025 Federico S. Rizzo. Todos los derechos reservados.</p>
+          <p className="text-center text-xs sm:text-sm px-2 break-words">
+            © 2025 Federico S. Rizzo. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>

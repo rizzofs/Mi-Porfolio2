@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import CapturaExpo from '../assets/CapturaExpo.png';
 
 const ProjectDetailExpo = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const ProjectDetailExpo = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Descripción General</h2>
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl border border-blue-200 shadow-lg">
+            <img src={CapturaExpo} alt="Expo UNLu" className="rounded-xl shadow-lg mb-6 w-full" />
             <p className="text-lg text-gray-700 mb-4">
               Sitio web interactivo desarrollado para representar el stand virtual de la <strong>Licenciatura en Sistemas de Información</strong> durante la <strong>Expo UNLu 2025</strong>.
             </p>

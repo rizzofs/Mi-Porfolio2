@@ -1,33 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario
-    console.log('Formulario enviado:', formData);
-    // Resetear el formulario
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-  };
-
   const contactInfo = [
     {
       icon: 'fas fa-envelope',

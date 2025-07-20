@@ -6,6 +6,11 @@ import pdvDashboard from '../assets/pdv-dashboard.png';
 import capturaCodes from '../assets/CapturaCodes.png';
 import capturaExpo from '../assets/CapturaExpo.png';
 import Foto3 from '../assets/Foto3.jpg';
+import CapturaBruno from '../assets/CapturaBruno.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 const AllProjects = () => {
   useEffect(() => {
@@ -54,6 +59,22 @@ const AllProjects = () => {
       ],
       link: '/proyectos/expo',
       linkText: 'Ver más'
+    },
+    {
+      id: 'bruno',
+      title: 'Remises Bruno - Transporte Premium',
+      description: 'Sitio web para Remises Bruno, empresa de transporte ejecutivo y de pasajeros en Chivilcoy, Buenos Aires. Diseño moderno, responsivo y optimizado.',
+      image: CapturaBruno,
+      technologies: [
+        { name: 'HTML5', color: 'blue' },
+        { name: 'CSS3', color: 'red' },
+        { name: 'Bootstrap 5', color: 'purple' },
+        { name: 'JavaScript', color: 'yellow' },
+        { name: 'AOS', color: 'green' },
+        { name: 'Swiper.js', color: 'rose' }
+      ],
+      link: '/proyectos/bruno',
+      linkText: 'Ver más'
     }
   ];
 
@@ -84,7 +105,45 @@ const AllProjects = () => {
       <main className="flex-1">
         <section className="max-w-6xl mx-auto px-4 py-12">
           <h2 className="section-title mb-12">Proyectos destacados</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {/* Carrusel en móvil, grilla en desktop */}
+          <div className="block md:hidden">
+            <Swiper
+              modules={[Pagination]}
+              pagination={{ clickable: true }}
+              spaceBetween={24}
+              slidesPerView={1}
+              className="rounded-xl"
+            >
+              {projects.map((project, index) => (
+                <SwiperSlide key={index}>
+                  <div className="project-card bg-white rounded-xl shadow-lg border border-gray-100 transition-all">
+                    <div className="h-48 overflow-hidden">
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                    </div>
+                    <div className="p-6 flex flex-col flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-gray-800 project-title">{project.title}</h3>
+                      <p className="text-gray-600 mb-4">{project.description}</p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className={`${colorClasses[tech.color]} text-xs px-2 py-1 rounded`}
+                          >
+                            {tech.name}
+                          </span>
+                        ))}
+                      </div>
+                      <Link to={project.link} className="text-blue-600 font-medium hover:underline project-action">
+                        {project.linkText}
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          {/* Grilla en desktop */}
+          <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="project-card bg-white rounded-xl shadow-lg border border-gray-100 transition-all">
                 <div className="h-48 overflow-hidden">
@@ -114,7 +173,7 @@ const AllProjects = () => {
 
         {/* Contacto CTA */}
         <section id="contacto-cta" className="py-16 bg-white mt-8 rounded-xl shadow-md max-w-6xl mx-auto px-4">
-          <h2 className="section-title mb-8">¿Tienes un proyecto en mente?</h2>
+          <h2 className="section-title mb-8 text-center text-base sm:text-2xl px-4 leading-relaxed break-words">¿Tienes un proyecto en mente?</h2>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
               <p className="text-lg text-gray-700 mb-6">Estoy disponible para colaboraciones, propuestas laborales o simplemente para charlar sobre tecnología. ¡No dudes en contactarme!</p>
