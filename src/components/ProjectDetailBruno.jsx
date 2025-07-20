@@ -100,7 +100,6 @@ const ProjectDetailBruno = () => {
                 <ul className="text-gray-700 space-y-2 text-lg">
                   <li>• Galería de vehículos</li>
                   <li>• Detalle de servicios ofrecidos</li>
-                  <li>• Estadísticas y testimonios</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
@@ -159,6 +158,7 @@ const ProjectDetailBruno = () => {
           </div>
 
         </section>
+        <div className="mt-8 text-center text-sm text-gray-500 italic">Próximamente: Sección de estadísticas y testimonios de clientes.</div>
       </main>
       <Footer />
     </>
